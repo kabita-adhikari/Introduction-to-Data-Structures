@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#a-short-introduction-on-data-structures" id="toc-a-short-introduction-on-data-structures" class="nav-link active" data-scroll-target="#a-short-introduction-on-data-structures"><span class="header-section-number">1</span> A short introduction on Data structures</a></li>
+  <li><a href="#a-short-introduction-on-data-structures" id="toc-a-short-introduction-on-data-structures" class="nav-link active" data-scroll-target="#a-short-introduction-on-data-structures">A short introduction on Data structures</a></li>
   </ul>
 </nav>
     </div>
@@ -98,8 +98,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="a-short-introduction-on-data-structures" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> A short introduction on Data structures</h1>
+<section id="a-short-introduction-on-data-structures" class="level1">
+<h1>A short introduction on Data structures</h1>
 <p>You don’t have to search for long to see different ways of organizing data in real life situations. Standing in line at the cafeteria, picking the winner in a March Madness bracket, writing down a shopping list, etc. All these examples allow us to use a certain resource in a manner that makes life somewhat easier. Computer Science, as a field, borrows a lot of these ideas in organizing data. The way that a programmer views and organizes the data that his/her program is using has bearing on the success/failure of multiple algorithms. Whereas the primitive types (int, float, double, long, char, byte, short, boolean) are adequate for simple programs, most programs you’ll be writing deal with large amounts of complicated and related data. In order to deal with such data, some structures have been used to represent this data and its relationships.</p>
 <div style="page-break-after: always;"></div>
 <p>Some data structures are based on how the programmer organizes the data i.e.&nbsp;how it is organized in memory. These structures are typically used as the basic building blocks of other structures. It is important to remember that with these structures, the implementation of the organization is what is important…more important than what kind of data is being organized, or when that data was encountered and/or organized.</p>
@@ -117,7 +117,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Trees are non-linear data structures. Data arranged in a tree stores both the value and some kind of relationship between those values. The restriction in trees is that each node is capable of having multiple successor nodes, but only one parent node. The parent of all nodes (without a parent itself) is called the root. Think about a tournament bracket.</p></li>
 <li><p>Graphs are also non-linear data structures but with less restrictions on the intra node relationships. Any node (typically called a vertex) can be connected (through an edge) to any other vertex. Sometimes even the edges have weights associated with them. Think road or airline routes.</p></li>
 </ul>
-<div style="page-break-after: always;"></div>
+<p><br></p>
+<p><br></p>
 <p>There are some basic definitions we need to get out of the way before we dive into more complicated stuff.</p>
 <p><strong>Type</strong>: a collection of values. For example, a boolean type is collection of two values – true and false. A simple type (such as boolean or integer) will not have subparts, whereas an aggregate or composite type will contain several pieces of information.</p>
 <p><strong>Data item</strong>: a data item is a member of the type i.e.&nbsp;a piece of information derived from a type.</p>
@@ -125,8 +126,9 @@ ul.task-list li input[type="checkbox"] {
 <p>There is a difference between the logical concept of a data type and its physical implementation (even if the line is blurred). Consider an array: Its logical concept is that of potentially homogeneous data items stored in a collection where each item is accessed using an index number. However, its physical implementation is a block of contiguous memory locations. The distinction between the two needs to be made because there are cases where arrays (particularly multi-dimensional arrays) have been designed with the same logical idea, but different physical implementation (i.e.&nbsp;the data items are not in contiguous memory locations) but that doesn’t make them any less of an array than a typical array. Another example is the list. Its logical concept is a collection of items, but its physical implementation could be either an array or a linked list. Both are lists, but they have very different physical implementations.</p>
 <p><strong>Abstract data type</strong>: When the idea of a data type is realized as a software component i.e.&nbsp;the type and operations are realized in code. This is typically represented by an interface. It does NOT specify how the data type is implemented. In fact, such details are typically hidden from the user of the data type or any outside access.</p>
 <p><strong>Data structure</strong>: The complete implementation of an ADT. It typically takes the form of a class where the operations of the ADT are captured by member functions of that class.</p>
-<p>An integer as well as the operations that an integer can be put through make up the integer data type. The java int variable is a physical representation of the abstract integer. This variable, alongside the java int operations make up an ADT. But there is difference between the two (i.e.&nbsp;a difference between a java int ADT and the abstract integer). The java int ADT can only support values within a certain range and we know that real integers do not have that limitation. If this limitation is a deal breaker for you, then you will have to figure out a different ADT (with different implementations) to represent your integers.</p>
-<p>Ref:</p>
+<p>An integer as well as the operations that an integer can be put through make up the integer data type. The java int variable is a physical representation of the abstract integer. This variable, alongside the java int operations make up an ADT. But there is difference between the two (i.e.&nbsp;a difference between a java int ADT and the abstract integer). The java int ADT can only support values within a certain range and we know that real integers do not have that limitation. If this limitation is a deal breaker for you, then you will have to figure out a different ADT (with different implementations) to represent your integers. <br></p>
+<p><br> <br></p>
+<p><br> <br> <br> <br> Ref:<br></p>
 <p>A Practical Introduction to Data Structures and Algorithm Analysis, Clifford A. Shaffer ; Object Oriented Data Structures using Java (4th Edition). Nell Dale, Daniel T. Joyce, Chip Weems.</p>
 
 

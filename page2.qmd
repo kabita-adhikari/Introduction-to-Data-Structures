@@ -4,7 +4,6 @@ format:
    html:
     toc: true
     toc-depth: 2
-    number-sections: true
     code-block-bg: true
     code-block-border-left: true
 ---
@@ -35,9 +34,9 @@ stack of plates at Tech Table. This way of looking at a data structure has nothi
 
 - Graphs are also non-linear data structures but with less restrictions on the intra node relationships. Any node (typically called a vertex) can be connected (through an edge) to any other vertex. Sometimes even the edges have weights associated with them. Think road or airline routes.
 
-{{< pagebreak >}}
+<br>
 
-
+</br>
 
 
 There are some basic definitions we need to get out of the way before we dive into more complicated stuff.
@@ -54,10 +53,17 @@ There is a difference between the logical concept of a data type and its physica
 
 **Data structure**: The complete implementation of an ADT. It typically takes the form of a class where the operations of the ADT are captured by member functions of that class.
 
-An integer as well as the operations that an integer can be put through make up the integer data type. The java int variable is a physical representation of the abstract integer. This variable, alongside the java int operations make up an ADT. But there is difference between the two (i.e. a difference between a java int ADT and the abstract integer). The java int ADT can only support values within a certain range and we know that real integers do not have that limitation. If this limitation is a deal breaker for you, then you will have to figure out a different ADT (with different implementations) to represent your integers.                            
+An integer as well as the operations that an integer can be put through make up the integer data type. The java int variable is a physical representation of the abstract integer. This variable, alongside the java int operations make up an ADT. But there is difference between the two (i.e. a difference between a java int ADT and the abstract integer). The java int ADT can only support values within a certain range and we know that real integers do not have that limitation. If this limitation is a deal breaker for you, then you will have to figure out a different ADT (with different implementations) to represent your integers. 
+<br>
 
+</br>
+<br>
 
-Ref:
+</br>
+</br>
+<br>
+</br>
+Ref:<br>
 
 A Practical Introduction to Data Structures and Algorithm Analysis, Clifford A. Shaffer ; 
 Object Oriented Data Structures using Java (4th Edition). Nell Dale, Daniel T. Joyce, Chip Weems.
